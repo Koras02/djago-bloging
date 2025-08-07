@@ -13,3 +13,13 @@ def product_list(request):
     # 제품 목록을 템플릿에 전달
    
     return render(request, 'myapp/product_list.html', {'products': products})
+
+def example_view(request):
+    # 예시 뷰 함수 
+    context = {
+        "title": "Template Example",
+        'heading': "Django Template Testing",
+        "description": "This is a simple example of a Django template.",
+        "items": ["Keyboard", "Mouse", "Monitor", "CPU"],
+    }
+    return render (request, "myapp/example.html", context)
