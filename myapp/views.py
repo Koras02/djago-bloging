@@ -23,3 +23,8 @@ def example_view(request):
         "items": ["Keyboard", "Mouse", "Monitor", "CPU"],
     }
     return render (request, "myapp/example.html", context)
+
+
+def index(request):
+      return render(request, "index.html");
+  
