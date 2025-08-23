@@ -122,7 +122,7 @@ STATIC_URL = 'static/'
 
 # 개발 중 정적 파일 위치
 STATICFILES_DIRS = [
-    BASE_DIR / "static", # 프로젝트 내 static 디렉토리
+    BASE_DIR / "myapp" / "static", # 프로젝트 내 static 디렉토리
 ]
 
 # collectstatic 명령어로 수집된 정적 파일 위치 (배포 시 사용)
